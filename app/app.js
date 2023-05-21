@@ -99,11 +99,11 @@ function createFoodView(winHome) {
         resizable: false,
         autoHideMenuBar: true,
         webPreferences: {
-            preload: path.join(__dirname, "./js/preloads/preload.js"),
+            preload: path.join(__dirname, "./preloads/preload.js"),
             sandbox: false // This way you can import moduls into of the preloads.
         }
     });
-    winFood.loadFile('./app/html/foodView.html');
+    winFood.loadFile('./views/pages/food.html');
 
     // The food button in the Home view is disabled.
     winHome.webContents.send('stateFoodButton', true);
