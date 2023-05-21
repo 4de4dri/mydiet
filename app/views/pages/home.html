@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Dieta</title>
+    <link rel="stylesheet" href="../../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../styles/home.css">
+    <link rel="stylesheet" href="../styles/general.css">
+</head>
+
+<body>
+
+    <!-- Horizontal menu -->
+    <div class="horizontal-menu">
+        <!-- Username -->
+        <div class="username">
+            <div class="dropdown">
+                <span data-bs-toggle="dropdown" aria-expanded="false"></span>
+                <ul class="dropdown-menu">
+                    <li class="dropdown-item">Settings</li>
+                    <li class="dropdown-item">Log out</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Menu items -->
+        <div class="box-menu-items">
+            <span class="tab-tmb tab-selected">TMB</span><!--
+            --><span class="tab-dieta">Diet</span>
+        </div>
+
+        <!-- Food button -->
+        <div class="btn-food">
+            <button type="button" id="btn-food" class="btn btn-primary btn-sm">Food</button>
+        </div>
+
+    </div>
+
+    <!-- Element where the content of the selected section will be loaded. -->
+    <div class="load-content"></div>
+
+
+    <script src="../../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../../../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../renderers/home.js"></script>
+    <script src="../renderers/general.js"></script>
+</body>
+
+</html>

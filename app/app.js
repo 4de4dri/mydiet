@@ -8,22 +8,22 @@ const db = new DB();
  */
 app.whenReady().then(() => {
     // *** TEMPORAL *** => Directly open the home screen for design and functionality.
-    // createHomeView({
-    //     AGE: 1,
-    //     HEIGHT: 1,
-    //     ID: 10,
-    //     PASSWORD: "root",
-    //     USERNAME: "root",
-    //     WEIGHT: 1
-    // });
+    createHomeView({
+        AGE: 1,
+        HEIGHT: 1,
+        ID: 10,
+        PASSWORD: "root",
+        USERNAME: "root",
+        WEIGHT: 1
+    });
     // TODO: Uncomment when you have finished developing the home screen.
-    createPrincipalView();
+    // createMainView();
 });
 
 /**
  * Principal view.
  */
-function createPrincipalView() {
+function createMainView() {
     let winPrincipal = new BrowserWindow({
         width: 600,
         height: 500,
@@ -73,12 +73,12 @@ function createHomeView(userData) {
         resizable: false,
         autoHideMenuBar: true,
         webPreferences: {
-            preload: path.join(__dirname, "./js/preloads/preload.js"),
+            preload: path.join(__dirname, "./preloads/preload.js"),
             sandbox: false // This way you can import moduls into of the preloads.
         }
     });
 
-    winHome.loadFile('./app/html/homeView.html').then(() => {
+    winHome.loadFile('app/views/pages/home.html').then(() => {
         // The user data is sent to the preload to be received from the renderer.
         winHome.webContents.send('userData', userData);
     });

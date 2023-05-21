@@ -1,0 +1,96 @@
+
+body {
+    overflow-x: hidden;
+}
+
+.horizontal-menu {
+    background-color: white;
+    padding: 8px 0px;
+    border-bottom: 1px solid #004980;
+}
+
+    .username {
+        display: inline-block;
+    }
+
+    .username span {
+        background-color: #00203D;
+        color: white;
+        text-align: left;
+        padding: 10px;
+        padding-left: 20px;
+        padding-right: 50px;
+        margin: 0;
+        border-top-right-radius: .5em;
+        font-weight: bold;
+    }
+
+        .username span:hover {
+            cursor: pointer;
+            background-color: #004980;
+        }
+
+        .username span i {
+            margin-right: .5em;
+        }
+
+    .username .dropdown-menu {
+        background-color: #00203D;
+    }
+
+        .username .dropdown-menu li {
+            color: white;
+            cursor: pointer;
+        }
+
+            .username .dropdown-menu li:hover {
+                background-color: #004980;
+            }
+
+    .box-menu-items {
+        display: inline-block;
+    }
+
+        .box-menu-items span {
+            padding: 10px 20px;
+            color:#00203D;
+            font-weight: bold;
+        }
+            .box-menu-items span:hover {
+                cursor: pointer;
+                background-color: #004980;
+                color: white;
+            }
+
+        .box-menu-items span.tab-selected {
+            cursor: pointer;
+            background-color: #004980;
+            color: white;
+        }
+
+    .btn-food {
+        float: right;
+        margin-right: 32px;
+        margin-top: 2px;
+    }
+
+        .btn-food .btn {
+            background-color: orangered;
+            color: white;
+            font-weight: bold;
+            border: 1px solid black;
+            border-bottom: none;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+
+            .btn-food .btn:hover {
+                background-color: #ff8d64;
+                color: white;
+            }
+
+            .btn-food .btn:active {
+                background-color: #ff4400;
+            }
+
+    
