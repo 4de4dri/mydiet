@@ -1,0 +1,13 @@
+
+body {
+    background-color: #dddddd;
+}
+
+.box-notification {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    background-color: #ffa0a0;
+    padding: 10px 0px;
+    display: none;
+}

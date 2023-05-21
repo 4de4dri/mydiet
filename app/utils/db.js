@@ -76,7 +76,7 @@ class DB {
                     if (err) {
                         throw err;
                     }
-                    return callback(['success', 'Registro realizado']);
+                    return callback(['success', 'Registration completed']);
                 });
                 this.disconnect();
             } else {

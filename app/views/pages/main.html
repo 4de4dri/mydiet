@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Dieta</title>
+    <link rel="stylesheet" href="../../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/general.css">
+</head>
+<body>
+    
+    <div class="container">
+        <!-- Tabs -->
+        <div class="row box-tabs-login-register">
+            <span class="col-sm tab-login tab-selected" id="tab-login">Login</span>
+            <span class="col-sm tab-register" id="tab-register">Register</span>
+        </div>
+
+        <!-- Login -->
+        <div class="row box-form-login">
+            <form class="col-sm">
+                <div class="mb-3">
+                    <label for="form-username" class="form-label form-label-sm">Username</label>
+                    <input type="text" class="form-control form-control-sm" id="form-login-username">
+                </div>
+
+                <div class="mb-3">
+                    <label for="form-password" class="form-label form-label-sm">Password</label>
+                    <input type="password" class="form-control form-control-sm" id="form-login-password">
+                </div>
+
+                <div class="mb-3">
+                    <button class="btn btn-primary" id="btn-login">Login</button>
+                </div>
+            </form>
+        </div>
+        
+        <!-- Register -->
+        <div class="row box-form-register">
+            <form class="col-sm">
+                <div class="mb-3">
+                    <label for="form-username" class="form-label form-label-sm">Username</label>
+                    <input type="text" class="form-control form-control-sm" id="form-register-username">
+                </div>
+
+                <div class="mb-3">
+                    <label for="form-password" class="form-label form-label-sm">Password</label>
+                    <input type="password" class="form-control form-control-sm" id="form-register-password">
+                </div>
+
+                <div class="input-group mb-3">
+                    <span class="input-group-text">Weight</span>
+                    <input type="text" class="form-control" placeholder="kg" id="form-register-weight">
+                    <span class="input-group-text">Height</span>
+                    <input type="text" class="form-control" placeholder="cm" id="form-register-height">
+                    <span class="input-group-text">Age</span>
+                    <input type="text" class="form-control" placeholder="años" id="form-register-age">
+                </div>
+
+                <div class="mb-3">
+                    <button class="btn btn-primary" id="btn-register">Register</button>
+                </div>
+            </form>
+        </div>
+
+    </div>       
+
+    <div class="box-notification col-sm-12" id="box-notification">
+        <span></span>
+    </div>
+
+    <script src="../../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../../../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../renderers/main.js"></script>
+    <script src="../renderers/general.js"></script>
+</body>
+</html>

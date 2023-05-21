@@ -1,0 +1,49 @@
+
+.container {
+    margin-top: 2em;
+}
+
+.box-tabs-login-register {
+    background-color: #00203D;
+}
+
+    .box-tabs-login-register span {
+        display: inline-block;
+        text-align: center;
+        padding: 10px;
+        color: white;
+        background-color: #00203D;
+        border: 1px solid black;
+        border-bottom: 0px;
+    }
+        .box-tabs-login-register span:hover {
+            cursor: pointer;
+            background-color: #004980;
+            font-weight: bold;
+        }
+
+        .box-tabs-login-register span.tab-selected {
+            cursor: pointer;
+            background-color: #004980;
+            font-weight: bold;
+        }
+        
+.box-form-login, .box-form-register {
+    border: 1px solid black;
+    background-color: white;
+}
+
+    .box-form-login form, .box-form-register form {
+        padding: 20px;
+    }
+
+    .box-form-login label, .box-form-register label, .box-form-register span {
+        font-weight: bold;
+    }
+
+.box-form-register {
+    display: none;
+}
+
+
+
