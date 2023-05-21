@@ -1,0 +1,36 @@
+{
+    "name": "mydiet",
+    "version": "1.0.0",
+    "description": "Application that allows you to create your diet and calculate your basal metabolic rate.",
+    "main": "./app/app.js",
+    "scripts": {
+        "start": "nodemon --exec electron .",
+        "start-docker": "docker-compose up -d"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/4de4dri/mydiet.git"
+    },
+    "keywords": [
+        "electronjs",
+        "application",
+        "diet",
+        "mysql",
+        "docker",
+        "docker-compose"
+    ],
+    "author": "4de4dri",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/4de4dri/mydiet/issues"
+    },
+    "homepage": "https://github.com/4de4dri/mydiet#readme",
+    "dependencies": {
+        "bootstrap": "^5.2.3",
+        "bootstrap-icons": "^1.10.5",
+        "electron": "^24.3.1",
+        "jquery": "^3.7.0",
+        "mysql2": "^3.3.1",
+        "nodemon": "^2.0.22"
+    }
+}
