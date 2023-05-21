@@ -1,7 +1,7 @@
 
 // Listener for when the DOM is loaded.
 $(() => {
-    // Listener for when you click on one of the two tabs (TMB or Diet).
+    // Listener for when you click on one of the two tabs (BMR or Diet).
     $('div.box-menu-items span').on('click', function (e) {
         e.preventDefault();
         // Picks up the name of the clicked tab.
@@ -13,12 +13,12 @@ $(() => {
         // Then apply the tab-selected class to the selected tab.
         $(`div.box-menu-items span[class*="tab-${tabName}"]`).addClass('tab-selected');
 
-        // Call to the method that loads the page tmb.html or midieta.html in the view.
+        // Call to the method that loads the page bmr.html or midieta.html in the view.
         loadSection(tabName);
     });
 
-    // The TMB section is displayed by default.
-    loadSection('tmb');
+    // The bmr section is displayed by default.
+    loadSection('bmr');
 
     // Listener for when the Food button is clicked.
     $('#btn-food').on('click', function () {
@@ -32,7 +32,7 @@ window.api.receive('userData', (res) => {
 });
 
 /**
- * Method that is in charge of loading the page tmb.html or diet.html in the content of the view 
+ * Method that is in charge of loading the page bmr.html or diet.html in the content of the view 
  * depending on the section that has been clicked.
  */
 function loadSection(tabName) {

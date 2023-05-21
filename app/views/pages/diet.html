@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My diet</title>
+    <link rel="stylesheet" href="../styles/diet.css">
+</head>
+
+<body>
+
+    <div class="box-food-day">
+        <!-- Selection of the day -->
+        <div class="box-select-day row justify-content-center">
+            <div class="select-day-left col-sm">
+                <i id="left-arrow" class="bi bi-arrow-left-square"></i>
+            </div>
+
+            <div class="select-day-name col-sm">
+                <span id="current-day">Monday</span>
+            </div>
+
+            <div class="select-day-right col-sm">
+                <i id="right-arrow" class="bi bi-arrow-right-square"></i>
+            </div>
+        </div>
+
+        <!-- Foods -->
+        <div class="box-foods">
+            <!-- Breakfast -->
+            <div class="box-food-breakfast">
+                <div class="title">
+                    <span class="text">Breakfast</span>
+                    <span class="icon-copy"><i class="bi bi-files"></i></span>
+                    <span class="icon-add"><i class="bi bi-plus-square"></i></span>
+                </div>
+
+                <table class="breakfast-table">
+                    <tr>
+                        <th></th>
+                        <th>Food</th>
+                        <th>Amount (g)</th>
+                        <th>P</th>
+                        <th>C</th>
+                        <th>F</th>
+                    </tr>
+                    <!-- Here the food will be added -->
+                    <tr class="food-row">
+                        <td>
+                            <i class="bi bi-pencil btn-edit"></i>
+                            <i class="bi bi-trash btn-delete"></i>
+                        </td>
+                        <td>Cereals</td>
+                        <td>50</td>
+                        <td>3</td>
+                        <td>20</td>
+                        <td>0</td>
+                    </tr>
+                </table>
+
+            </div>
+
+            <!-- Mid-morning -->
+            <div class="box-food-midmorning">
+                <div class="title">
+                    <span class="text">Mid-morning</span>
+                    <span class="icon-copy"><i class="bi bi-files"></i></span>
+                    <span class="icon-add"><i class="bi bi-plus-square"></i></span>
+                </div>
+            </div>
+
+            <!-- Almuerzo -->
+            <div class="box-food-lunch">
+                <div class="title">
+                    <span class="text">Lunch</span>
+                    <span class="icon-copy"><i class="bi bi-files"></i></span>
+                    <span class="icon-add"><i class="bi bi-plus-square"></i></span>
+                </div>
+            </div>
+            
+            <!-- Snack -->
+            <div class="box-food-snack">
+                <div class="title">
+                    <span class="text">Snack</span>
+                    <span class="icon-copy"><i class="bi bi-files"></i></span>
+                    <span class="icon-add"><i class="bi bi-plus-square"></i></span>
+                </div>
+            </div>
+
+            <!-- Dinner -->
+            <div class="box-food-dinner">
+                <div class="title">
+                    <span class="text">Dinner</span>
+                    <span class="icon-copy"><i class="bi bi-files"></i></span>
+                    <span class="icon-add"><i class="bi bi-plus-square"></i></span>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Goal and total -->
+    <div class="box-goal-total">
+        <div class="box-total">
+            <div class="title">
+                <span>Total - </span><span id="total-day">Monday</span>
+            </div>
+            <table class="tabla">
+                <thead>
+                    <tr>
+                        <th>P</th>
+                        <th>C</th>
+                        <th>F</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>170</td>
+                        <td>365</td>
+                        <td>85</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="box-goal">
+            <div class="title">
+                <span>Goal</span>
+            </div>
+            <div class="tabla">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>P</th>
+                            <th>C</th>
+                            <th>F</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>170</td>
+                            <td>365</td>
+                            <td>85</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="../renderers/diet.js"></script>
+</body>
+
+</html>
