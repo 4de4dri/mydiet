@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alimentos</title>
+    <link rel="stylesheet" href="../../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../styles/food.css">
+    <link rel="stylesheet" href="../styles/general.css">
+</head>
+
+<body>
+
+    <!-- Box -->
+    <div class="box-food">
+        <!-- Title and button add -->
+        <div class="title-btn-add">
+            <div class="title">
+                <h4>Alimentos</h4>
+            </div>
+            <div class="btn-add">
+                <button class="btn btn-sm btn-info">Añadir</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Table -->
+    <div class="box-table">
+        <table class="table table-hover table-bordered border-dark">
+            <thead>
+                <tr>
+                    <th id="th-actions"></th>
+                    <th id="th-name">Nombre</th>
+                    <th id="th-quantity">Cantidad (g)</th>
+                    <th id="th-proteins">P</th>
+                    <th id="th-carbs">H</th>
+                    <th id="th-fats">G</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <i class="bi bi-pencil"></i>
+                        <i class="bi bi-trash"></i>
+                    </td>
+                    <td>Cereales Corn Flakes</td>
+                    <td>100</td>
+                    <td>25</td>
+                    <td>150</td>
+                    <td>3</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+    <script src="../../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../../../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../renderers/food.js"></script>
+    <script src="../renderers/general.js"></script>
+</body>
+
+</html>

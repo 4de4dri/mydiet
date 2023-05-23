@@ -1,0 +1,96 @@
+
+body {
+    background-color: white !important;
+}
+
+    .title-btn-add {
+        background-color: #004980;
+        overflow: hidden;
+        padding: 0 10px;
+        border-bottom: 2px solid black;
+    }
+
+        .box-food .title {
+            float: left;
+            margin-left: 20px;
+            margin-top: 12px;
+            color: white;
+        }
+
+            .box-food .title h4 {
+                margin: 0;
+                padding: 0;
+            }
+
+        .box-food .btn-add {
+            float: right;
+            font-size: 30px;
+            padding: 0;
+            margin: 0;
+            margin-bottom: 10px;
+            margin-right: 20px;
+            font-weight: bold;
+        }
+
+.box-table {
+    padding: 10px;
+}
+
+th, td {
+    padding: 10px !important;
+}
+
+table th#th-name {
+    width: 40%;
+}
+
+table th#th-quantity {
+    width: 20%;
+}
+
+table th#th-proteinsname {
+    width: 10%;
+}
+
+table th#th-carbs {
+    width: 10%;
+}
+
+table th#th-fats {
+    width: 10%;
+}
+
+table th#th-actions {
+    width: 10%;
+}
+
+table thead th:nth-child(1), th:nth-child(3), th:nth-child(4), th:nth-child(5), th:nth-child(6)  {
+    text-align: center;
+}
+
+table tbody td:nth-child(1), td:nth-child(3), td:nth-child(4), td:nth-child(5), td:nth-child(6)  {
+    text-align: center;
+}
+
+td i:nth-child(1) {
+    margin-right: 5px;
+    color: orange;
+}
+
+td i:nth-child(2) {
+    margin-right: 5px;
+    color: red;
+}
+
+td i {
+    cursor: pointer;
+    display: inline-block;
+}
+
+td i:hover {
+    transform: scale(2);
+    transition: all .2s ease;
+}
+
+
+
