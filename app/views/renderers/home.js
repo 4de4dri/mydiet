@@ -10,7 +10,7 @@ $(() => {
 
         // Modifies the style of the tabs depending on which one is clicked.
         // First remove the tab-selected class to the two tabs.
-        $('div.box-menu-items span').removeClass('tab-selected'); 
+        $('div.box-menu-items span').removeClass('tab-selected');
         // Then apply the tab-selected class to the selected tab.
         $(`div.box-menu-items span[class*="tab-${tabName}"]`).addClass('tab-selected');
 
