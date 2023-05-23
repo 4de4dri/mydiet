@@ -8,16 +8,19 @@ const db = new DB();
  */
 app.whenReady().then(() => {
     // *** TEMPORAL *** => Directly open the home screen for design and functionality.
-    // createHomeView({
-    //     AGE: 1,
-    //     HEIGHT: 1,
-    //     ID: 10,
-    //     PASSWORD: "root",
-    //     USERNAME: "root",
-    //     WEIGHT: 1
-    // });
-    // TODO: Uncomment when you have finished developing the home screen.
-    createMainView();
+    createHomeView({
+        AGE: 1,
+        HEIGHT: 1,
+        ID: 10,
+        PASSWORD: "root",
+        USERNAME: "root",
+        WEIGHT: 1
+    });
+    // TODO: Delete it when you have finished developing the home screen.
+    // createMainView();
+
+    // TODO: Delete it whet you have finished developing the food view.
+    // createFoodView(new BrowserWindow({}));
 });
 
 /**
@@ -94,16 +97,16 @@ function createHomeView(userData) {
  */
 function createFoodView(winHome) {
     let winFood = new BrowserWindow({
-        width: 800,
-        height: 750,
-        resizable: false,
+        width: 720,
+        height: 700,
+        resizable: true,
         autoHideMenuBar: true,
         webPreferences: {
             preload: path.join(__dirname, "./preloads/preload.js"),
             sandbox: false // This way you can import moduls into of the preloads.
         }
     });
-    winFood.loadFile('./views/pages/food.html');
+    winFood.loadFile('app/views/pages/food.html');
 
     // The food button in the Home view is disabled.
     winHome.webContents.send('stateFoodButton', true);
