@@ -5,7 +5,8 @@ $(() => {
     $('div.box-menu-items span').on('click', function (e) {
         e.preventDefault();
         // Picks up the name of the clicked tab.
-        const tabName = $(this).text().toLowerCase();
+        let tabName = $(this).text().toLowerCase();
+        tabName === 'tmb' ? tabName = 'bmr' : tabName = 'diet';
 
         // Modifies the style of the tabs depending on which one is clicked.
         // First remove the tab-selected class to the two tabs.
