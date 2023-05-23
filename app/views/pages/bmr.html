@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/bmr.css">
+
+</head>
+
+<body>
+    <div class="box-calculate-bmr">
+        <div class="title">
+            <span>Calcular tasa metabólica basal</span>
+        </div>
+
+        <div class="forms-calculate-bmr">
+            <div class="d-flex justify-content-left">
+                <form>
+                    <label for="form-age">Edad:</label><br>
+                    <input type="text" id="form-age" placeholder="years"><br>
+    
+                    <label for="form-height">Altura:</label><br>
+                    <input type="text" id="form-height" placeholder="cm"><br>
+    
+                    <label for="form-weight">Peso:</label><br>
+                    <input type="text" id="form-weight" placeholder="kg"><br>
+                </form>
+    
+                <form class="form-radio">
+                    <h5>Actividad física</h5>
+    
+                    <input type="radio" id="form-phy-act-little" name="phy-act" value="little" checked>
+                    <label for="form-phy-act-little">Poco o ningún ejercicio (TMB x 1,2)</label><br>
+    
+                    <input type="radio" id="form-phy-act-light" name="phy-act" value="light">
+                    <label for="form-phy-act-light">Ejercicio ligero (1 - 3 días) - TMB x 1,375</label><br>
+    
+                    <input type="radio" id="form-phy-act-moderate" name="phy-act" value="moderate">
+                    <label for="form-phy-act-moderate">Ejercicio moderado (3 - 5 días) - TMB x 1,55</label><br>
+    
+                    <input type="radio" id="form-phy-act-strong" name="phy-act" value="strong">
+                    <label for="form-phy-act-strong">Ejercicio fuerte (6 - 7 días) - TMB x 1,725</label><br>
+    
+                    <input type="radio" id="form-phy-act-verystrong" name="phy-act" value="verystrong">
+                    <label for="form-phy-act-verystrong">Ejercicio muy fuerte (2 veces al día) TMB x 1,9</label><br>
+                </form>
+    
+                <form class="form-radio">
+                    <h5>Objetivo</h5>
+    
+                    <input type="radio" id="form-gain-weight" name="goal" value="gain" checked>
+                    <label for="form-gain-weight">Ganar peso (+10%)</label><br>
+    
+                    <input type="radio" id="form-maintain-weight" name="goal" value="maintain">
+                    <label for="form-maintain-weight">Mantener peso</label><br>
+    
+                    <input type="radio" id="form-lose-weight" name="goal" value="lose">
+                    <label for="form-lose-weight">Perder peso (-10%)</label><br>
+                </form>
+    
+                <form>
+                    <h5>Macronutrientes</h5>
+    
+                    <label for="form-proteins">Proteinas (1,8 - 2,5):</label><br>
+                    <input type="number" id="form-proteins" placeholder="grams"><br>
+    
+                    <label for="form-fats">Grasas (0,5 - 1,5):</label><br>
+                    <input type="number" id="form-fats" placeholder="grams"><br>
+                </form>
+
+            </div>
+            <button id="btn-calculate" class="btn btn-sm btn-primary mt-3">Calcular</button>
+        </div>
+    </div>
+
+    <div class="box-result-bmr">
+        <div class="title">
+            <span>Resultado</span>
+        </div>
+
+        <div class="box-info-total-result-bmr">
+            <div class="info-result-bmr">
+                <h5>Datos</h5>
+                <table class="mb-2">
+                    <tr>
+                        <th>Edad:</th>
+                        <td id="age-data">31</td>
+                    </tr>
+                    <tr>
+                        <th>Altura:</th>
+                        <td id="height-data">180 cm</td>
+                    </tr>
+                    <tr>
+                        <th>Peso:</th>
+                        <td id="weight-data">85 kg</td>
+                    </tr>
+                    <tr>
+                        <th>Actividad física:</th>
+                        <td id="phy-act-data">Ejercicio moderado</td>
+                    </tr>
+                    <tr>
+                        <th>Objetivo:</th>
+                        <td id="goal-data">Mantener peso</td>
+                    </tr>
+                    <tr>
+                        <th>Proteinas:</th>
+                        <td id="proteins-data">2 g/kg de peso.</td>
+                    </tr>
+                    <tr>
+                        <th>Grasas</th>
+                        <td id="fats-data">1 g/kg de peso</td>
+                    </tr>
+                </table>
+
+                <button id="btn-save" class="btn btn-sm btn-success mt-3">Guardar</button>
+                <button id="btn-cancel" class="btn btn-sm btn-danger mt-3">Cancelar</button>
+            </div>
+
+            <div class="total-result-bmr">
+                <h5>Total</h5>
+
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Kcal</th>
+                            <th>Proteinas</th>
+                            <th>Hidratos</th>
+                            <th>Grasas</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-group-divider">
+                        <tr>
+                            <td id="total-kcal">2828</td>
+                            <td id="total-proteins">170</td>
+                            <td id="total-carbs">365</td>
+                            <td id="total-fats">85</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="box-notification col-sm-12" id="box-notification">
+        <span></span>
+    </div>
+
+    <script src="../renderers/bmr.js"></script>
+</body>
+
+</html>

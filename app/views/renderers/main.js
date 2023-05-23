@@ -5,7 +5,8 @@ $(() => {
     $('div.box-tabs-login-register span').on('click', function (e) {
         e.preventDefault();
         // Picks up the name of the clicked tab.
-        const tabName = $(this).text().toLowerCase();
+        let tabName = $(this).text().toLowerCase();
+        if(tabName === 'registro') tabName = 'register';
 
         // Modifies the style of the tabs depending on which one is clicked.
         // First remove the tab-selected class to the two tabs.
@@ -50,10 +51,10 @@ function login() {
 
         // Receives data from the preload when it does not find the credentials.
         window.api.receive('failLogin', (res) => { 
-            showNotification('Incorrect data.');
+            showNotification('Datos incorrectos');
         });
     } else {
-        showNotification('You must fill in all the data.');
+        showNotification('Debes rellenar todos los datos');
     }
 }
 
@@ -83,7 +84,7 @@ function register() {
             showNotification(res, true);
         });
     } else {
-        showNotification('You must fill in all the data.');
+        showNotification('Debes rellenar todos los datos');
     }
 
 }

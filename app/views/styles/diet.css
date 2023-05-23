@@ -1,0 +1,189 @@
+
+body {
+    overflow: hidden;
+}
+
+.box-food-day {
+    margin-right: 2em;
+    margin-left: 2em;
+    width: 700px;
+    max-height: 730px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.box-food-day, .box-goal-total {
+    padding: 10px;
+    border: 1px solid black;
+    background-color: white;
+    margin-top: 2em;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.box-select-day {
+    margin-bottom: 1em;
+}
+
+    .box-select-day span, .box-select-day i {
+        font-size: 25px;
+        color: #00203D;
+    }
+
+        .select-day-left i:hover, .select-day-right i:hover {
+            color: #0091ff;
+            cursor: pointer;
+        }
+
+        .select-day-left {
+            margin-left: 150px;
+        }
+
+        .select-day-name {
+            text-align: center;
+        }
+
+        .select-day-right {
+            text-align: right;
+            margin-right: 150px;
+        }
+
+
+
+.box-foods div {
+    margin-bottom: 1em;
+}
+
+.box-foods .title {
+    color: black;
+    padding: 5px;
+    border: 1px solid black;
+    overflow: hidden;
+    font-weight: 500;
+    margin: 0;
+}
+
+.box-foods .title .text {
+    padding-left: 10px;
+    padding-top: 4px;
+    float: left;
+    font-size: 18px;
+    color: #004980;
+}
+
+.box-foods .title span[class*='icon'] {
+    font-size: 23px;
+    cursor: pointer;
+    float: right;
+    margin-right: 10px;
+}
+
+    .box-foods .title span[class*='icon']:hover {
+        transform: scale(1.3);
+        transition: all .2s ease;
+    }
+
+.box-foods .title .icon-add {
+    color: #00b991;
+}
+
+.box-foods .title .icon-copy {
+    color: #ffb700;
+}
+
+.box-foods .title span[class*='icon']:hover {
+    color: #004980;
+}
+
+
+.box-goal-total {
+    width: 325px;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+}
+
+    .box-goal-total div.title {
+        text-align: center;
+        background-color: #004980;
+        color: white;
+        padding: 10px 0;
+        font-size: 20px;
+        border-bottom: 3px solid black;
+    }
+
+    .box-total {
+        margin-bottom: 1em;
+    }
+
+    .box-goal, .box-total {
+        text-align: center;
+        background-color: white;
+    }
+
+    .box-goal-total table {
+        width: 100%;
+    }
+    .box-goal-total table th, .box-goal-total table td {
+        width: 33%;
+        border: 1px solid gray;
+        padding: 5px;
+    }
+
+div[class*='box-food-'] table[class*='-table'] {
+    width: 100%;
+    border: 1px solid black;
+    border-top: none;
+}
+
+    div[class*='box-food-'] table[class*='-table'] th, div[class*='box-food-'] table[class*='-table'] td {
+        border: 1px solid black;
+        border-top: none;
+        padding: 5px 10px;
+    }
+
+    tr.food-row td:nth-child(1) {
+        width: 10%;
+        text-align: center;
+    }
+        tr.food-row td:nth-child(1) i:nth-child(1) {
+            margin-right: 5px;
+        }
+
+    tr.food-row td:nth-child(2) {
+        width: 40%;
+    }
+    tr.food-row td:nth-child(3) {
+        width: 20%;
+    }
+
+    th:nth-child(4), th:nth-child(5), th:nth-child(6) {
+        width: 10%;
+        text-align: center;
+    }
+
+    tr.food-row td:nth-child(4), tr.food-row td:nth-child(5), tr.food-row td:nth-child(6) {
+        width: 10%;
+        text-align: center;
+    }
+
+    i.btn-edit {
+        color: rgb(255, 189, 67);
+    }
+
+    i.btn-delete {
+        color: red;
+    }
+
+    i.btn-edit, i.btn-delete {
+        font-size: 16px;
+        cursor: pointer;
+        display: inline-block;
+    }
+    
+        i.btn-edit:hover, i.btn-delete:hover {
+            transform: scale(2);
+            transition: all .2s ease;
+        }
+
+

@@ -76,7 +76,7 @@ class DB {
                     if (err) {
                         throw err;
                     }
-                    return callback(['success', 'Registration completed']);
+                    return callback(['success', 'Registro completado']);
                 });
                 this.disconnect();
             } else {
@@ -97,7 +97,7 @@ class DB {
                 throw err;
             }
             if (results.length !== 0) {
-                return callback(['error', 'Username not available.']);
+                return callback(['error', 'Nombre de usuario no disponible']);
             } else {
                 return callback(['success']);
             }

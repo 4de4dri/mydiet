@@ -8,16 +8,16 @@ const db = new DB();
  */
 app.whenReady().then(() => {
     // *** TEMPORAL *** => Directly open the home screen for design and functionality.
-    createHomeView({
-        AGE: 1,
-        HEIGHT: 1,
-        ID: 10,
-        PASSWORD: "root",
-        USERNAME: "root",
-        WEIGHT: 1
-    });
+    // createHomeView({
+    //     AGE: 1,
+    //     HEIGHT: 1,
+    //     ID: 10,
+    //     PASSWORD: "root",
+    //     USERNAME: "root",
+    //     WEIGHT: 1
+    // });
     // TODO: Uncomment when you have finished developing the home screen.
-    // createMainView();
+    createMainView();
 });
 
 /**
@@ -40,7 +40,7 @@ function createMainView() {
     ipcMain.on("login", (event, data) => {
         db.getUser(data, (res) => { // Search the database to see if the credentials exist.
             if (res.length === 0) {
-                winPrincipal.webContents.send('failLogin', 'Incorrect data'); // Send the message to the preload.
+                winPrincipal.webContents.send('failLogin', 'Datos incorrectos'); // Send the message to the preload.
                 return;
             }
 
@@ -99,11 +99,11 @@ function createFoodView(winHome) {
         resizable: false,
         autoHideMenuBar: true,
         webPreferences: {
-            preload: path.join(__dirname, "./js/preloads/preload.js"),
+            preload: path.join(__dirname, "./preloads/preload.js"),
             sandbox: false // This way you can import moduls into of the preloads.
         }
     });
-    winFood.loadFile('./app/html/foodView.html');
+    winFood.loadFile('./views/pages/food.html');
 
     // The food button in the Home view is disabled.
     winHome.webContents.send('stateFoodButton', true);

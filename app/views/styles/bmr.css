@@ -1,0 +1,66 @@
+
+.box-calculate-bmr {
+    padding: 30px 30px 15px 30px;
+}
+
+    .box-calculate-bmr .title, .box-result-bmr .title {
+        background-color: #004980;
+        padding: 10px;
+        color: white;
+        font-weight: 400;
+        font-size: 20px;
+    }
+
+    .box-calculate-bmr h5, .box-result-bmr h5 {
+        text-decoration: underline;
+        color: #004980;
+    }
+
+    .box-calculate-bmr form {
+        display: inline-block;
+        vertical-align: top;
+        margin-right: 2em;
+    }
+
+    .box-calculate-bmr form input {
+        margin-bottom: 10px;
+    }
+
+    .box-calculate-bmr form label {
+        font-weight: 600;
+    }
+
+    .forms-calculate-bmr, .box-info-total-result-bmr {
+        background-color: white;
+        padding: 20px;
+        border: 1px solid black;
+    }
+
+.box-result-bmr {
+    padding: 0px 30px;
+}
+
+    .box-result-bmr .title-datos {
+        font-weight: bold;
+    }
+
+    .box-info-total-result-bmr div {
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    .info-result-bmr {
+        margin-right: 6em;
+    }
+
+    .info-result-bmr table th {
+        padding-right: 30px;
+    }
+
+    .total-result-bmr table {
+        text-align: center;
+    }
+
+.form-radio input, .form-radio label {
+    cursor: pointer;
+}
