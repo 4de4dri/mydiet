@@ -28,7 +28,8 @@ $(() => {
 
 // It listens to the userData call to receive the logged-in user's data and paints it in the view.
 window.api.receive('userData', (res) => {
-    $('.username span').html(`<i class='bi bi-arrow-down-short'></i> ${res.USERNAME}`);
+    console.log(res);
+    $('.username span').html(`<i class='bi bi-arrow-down-short'></i> ${res[0].USERNAME}`);
 });
 
 /**

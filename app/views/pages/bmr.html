@@ -12,72 +12,72 @@
 <body>
     <div class="box-calculate-bmr">
         <div class="title">
-            <span>Calculate basal metabolic rate</span>
+            <span>Calcular tasa metabólica basal</span>
         </div>
 
         <div class="forms-calculate-bmr">
             <div class="d-flex justify-content-left">
                 <form>
-                    <label for="form-age">Age:</label><br>
+                    <label for="form-age">Edad:</label><br>
                     <input type="text" id="form-age" placeholder="years"><br>
     
-                    <label for="form-height">Height:</label><br>
+                    <label for="form-height">Altura:</label><br>
                     <input type="text" id="form-height" placeholder="cm"><br>
     
-                    <label for="form-weight">Weight:</label><br>
+                    <label for="form-weight">Peso:</label><br>
                     <input type="text" id="form-weight" placeholder="kg"><br>
                 </form>
     
                 <form class="form-radio">
-                    <h5>Physical activity</h5>
+                    <h5>Actividad física</h5>
     
                     <input type="radio" id="form-phy-act-little" name="phy-act" value="little" checked>
-                    <label for="form-phy-act-little">Little or no exercise (bmr x 1,2)</label><br>
+                    <label for="form-phy-act-little">Poco o ningún ejercicio (TMB x 1,2)</label><br>
     
                     <input type="radio" id="form-phy-act-light" name="phy-act" value="light">
-                    <label for="form-phy-act-light">Light exercise (1 - 3 days) - bmr x 1,375</label><br>
+                    <label for="form-phy-act-light">Ejercicio ligero (1 - 3 días) - TMB x 1,375</label><br>
     
                     <input type="radio" id="form-phy-act-moderate" name="phy-act" value="moderate">
-                    <label for="form-phy-act-moderate">Moderate exercise (3 - 5 days) - bmr x 1,55</label><br>
+                    <label for="form-phy-act-moderate">Ejercicio moderado (3 - 5 días) - TMB x 1,55</label><br>
     
                     <input type="radio" id="form-phy-act-strong" name="phy-act" value="strong">
-                    <label for="form-phy-act-strong">Strong exercise (6 - 7 days) - bmr x 1,725</label><br>
+                    <label for="form-phy-act-strong">Ejercicio fuerte (6 - 7 días) - TMB x 1,725</label><br>
     
                     <input type="radio" id="form-phy-act-verystrong" name="phy-act" value="verystrong">
-                    <label for="form-phy-act-verystrong">Very strong exercise (2 times a day) bmr x 1,9</label><br>
+                    <label for="form-phy-act-verystrong">Ejercicio muy fuerte (2 veces al día) TMB x 1,9</label><br>
                 </form>
     
                 <form class="form-radio">
-                    <h5>Goal</h5>
+                    <h5>Objetivo</h5>
     
                     <input type="radio" id="form-gain-weight" name="goal" value="gain" checked>
-                    <label for="form-gain-weight">Gain weight (+10%)</label><br>
+                    <label for="form-gain-weight">Ganar peso (+10%)</label><br>
     
                     <input type="radio" id="form-maintain-weight" name="goal" value="maintain">
-                    <label for="form-maintain-weight">Maintain weight</label><br>
+                    <label for="form-maintain-weight">Mantener peso</label><br>
     
                     <input type="radio" id="form-lose-weight" name="goal" value="lose">
-                    <label for="form-lose-weight">Lose weight (-10%)</label><br>
+                    <label for="form-lose-weight">Perder peso (-10%)</label><br>
                 </form>
     
                 <form>
-                    <h5>Macronutrients</h5>
+                    <h5>Macronutrientes</h5>
     
-                    <label for="form-proteins">Proteins (1,8 - 2,5):</label><br>
+                    <label for="form-proteins">Proteinas (1,8 - 2,5):</label><br>
                     <input type="number" id="form-proteins" placeholder="grams"><br>
     
-                    <label for="form-fats">Fats (0,5 - 1,5):</label><br>
+                    <label for="form-fats">Grasas (0,5 - 1,5):</label><br>
                     <input type="number" id="form-fats" placeholder="grams"><br>
                 </form>
 
             </div>
-            <button id="btn-calculate" class="btn btn-sm btn-primary mt-3">Calculate</button>
+            <button id="btn-calculate" class="btn btn-sm btn-primary mt-3">Calcular</button>
         </div>
     </div>
 
     <div class="box-result-bmr">
         <div class="title">
-            <span>Result</span>
+            <span>Resultado</span>
         </div>
 
         <div class="box-info-total-result-bmr">
@@ -114,8 +114,8 @@
                     </tr>
                 </table>
 
-                <button id="btn-save" class="btn btn-sm btn-success mt-3">Save</button>
-                <button id="btn-cancel" class="btn btn-sm btn-danger mt-3">Cancel</button>
+                <button id="btn-save" class="btn btn-sm btn-success mt-3">Guardar</button>
+                <button id="btn-cancel" class="btn btn-sm btn-danger mt-3">Cancelar</button>
             </div>
 
             <div class="total-result-bmr">
@@ -125,8 +125,8 @@
                     <thead>
                         <tr>
                             <th>Kcal</th>
-                            <th>Proteins</th>
-                            <th>Carbs</th>
+                            <th>Proteinas</th>
+                            <th>Hidratos</th>
                             <th>Grasas</th>
                         </tr>
                     </thead>
